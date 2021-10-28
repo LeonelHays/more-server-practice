@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000
 
 app.get('/', (req, res) => {
     res.send(`
-        <h1>Web 47 Rocks!</h1>
+        <h1>Web ${process.env.COHORT} Rocks!</h1>
     `)
 })
 app.get('/port', (req, res) => {
